@@ -1,5 +1,4 @@
 lxml==4.3.0
 scraperwiki==0.5.1
 Scrapy==1.5.2
-service-identity
 
