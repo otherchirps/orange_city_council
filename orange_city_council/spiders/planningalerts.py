@@ -2,8 +2,8 @@
 import scrapy
 from calendar import monthrange
 from datetime import datetime, date
-from urlparse import urljoin
-from urllib import quote
+from urllib.parse import urljoin
+from urllib.parse import quote
 
 from ..items import DevelopmentApplicationItem
 
@@ -75,8 +75,8 @@ class PlanningalertsSpider(scrapy.Spider):
         fetch its details page.
         """
         problems = (
-            "Problem Encountered",
-            "Error Page Exception"
+            b"Problem Encountered",
+            b"Error Page Exception"
         )
         for problem in problems:
             if problem in response.body:
